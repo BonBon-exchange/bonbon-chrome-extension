@@ -4,6 +4,6 @@ import Options from "./Options";
 
 test("renders learn react link", () => {
   render(<Options />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByText(/In development phase/i);
   expect(linkElement).toBeInTheDocument();
 });

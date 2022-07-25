@@ -11,7 +11,7 @@
   "permissions": ["storage", "contextMenus", "activeTab"],
   "host_permissions": ["*://*/*"],
   "action": {
-    "default_popup": "index.html",
+    "default_popup": "popup.html",
     "default_title": "Open the popup"
   },
   "background": {
@@ -23,8 +23,8 @@
       "js": ["./static/js/content.js"]
     }
   ],
-  "devtools_page": "index.html",
   "options_ui": {
-    "page": "index.html"
+    "page": "options.html",
+    "open_in_tab": true
   }
 }

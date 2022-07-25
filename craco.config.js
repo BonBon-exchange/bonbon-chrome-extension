@@ -30,6 +30,12 @@ module.exports = {
             template: paths.appHtml,
             filename: "options.html",
           }),
+          new HtmlWebpackPlugin({
+            inject: true,
+            chunks: ["main"],
+            template: paths.appHtml,
+            filename: "popup.html",
+          }),
         ],
       };
     },

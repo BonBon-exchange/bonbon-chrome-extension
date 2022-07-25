@@ -1,0 +1,30 @@
+{
+  "name": "BonBon",
+  "version": "0.0.1",
+  "description": "A compagnon for BonBon Browser",
+  "homepage_url": "https://github.com/BonBon-exchange/bonbon-chrome-extension",
+  "manifest_version": 3,
+  "minimum_chrome_version": "100",
+  "icons": {
+    "128": "logo192.png"
+  },
+  "permissions": ["storage", "contextMenus", "activeTab"],
+  "host_permissions": ["*://*/*"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
+  "background": {
+    "service_worker": "./static/js/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./static/js/content.js"]
+    }
+  ],
+  "devtools_page": "index.html",
+  "options_ui": {
+    "page": "index.html"
+  }
+}

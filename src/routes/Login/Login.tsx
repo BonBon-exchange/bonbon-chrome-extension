@@ -5,7 +5,7 @@ import "./style.scss";
 export const Login: React.FC = () => {
   return (
     <>
-      <Layout title="Home">
+      <Layout title="Login">
         <>login content</>
       </Layout>
     </>

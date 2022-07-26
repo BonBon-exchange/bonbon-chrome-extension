@@ -20,7 +20,9 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="popup.html" element={<Home />} />
-        <Route path="login" element={<Login />} />
+        <Route path="login" element={<Login />}>
+          <Route path=":view" element={<Login />} />
+        </Route>
         <Route path="*" element={<p>There's nothing here!</p>} />
       </Route>
     </Routes>

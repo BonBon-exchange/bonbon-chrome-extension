@@ -1,0 +1,19 @@
+#LoginMenu__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+}
+
+.Login__go-back-container {
+    display: flex;
+    justify-content: flex-end;
+
+    .Login__go-back {
+        width: fit-content;
+    }
+}

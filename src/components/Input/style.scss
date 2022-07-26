@@ -1,0 +1,12 @@
+.Input__primary {
+    color: var(--color-text-primary) !important;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.Input__primary::after {
+    border-bottom: 2px solid var(--color-icon-primary) !important;
+}
+
+.Input__primary:hover:not(.Mui-disabled):before {
+    border-bottom: 2px solid var(--color-background-tertiary) !important;
+}

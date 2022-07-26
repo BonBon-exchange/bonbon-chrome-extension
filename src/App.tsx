@@ -19,7 +19,8 @@ const App: React.FC = () => {
         <Link to="/popup.html">
           <div
             className={clsx("App__menu-item", "text-link", {
-              "App__menu-item-selected": location.pathname === "/popup.html",
+              "App__menu-item-selected":
+                location.pathname.indexOf("/popup.html") === 0,
             })}
           >
             Home
@@ -28,7 +29,8 @@ const App: React.FC = () => {
         <Link to="/login">
           <div
             className={clsx("App__menu-item", "text-link", {
-              "App__menu-item-selected": location.pathname === "/login",
+              "App__menu-item-selected":
+                location.pathname.indexOf("/login") === 0,
             })}
           >
             Login
@@ -37,7 +39,8 @@ const App: React.FC = () => {
         <Link to="/collections">
           <div
             className={clsx("App__menu-item", "text-link", {
-              "App__menu-item-selected": location.pathname === "/collections",
+              "App__menu-item-selected":
+                location.pathname.indexOf("/collections") === 0,
             })}
           >
             Collections
@@ -46,7 +49,8 @@ const App: React.FC = () => {
         <Link to="/data">
           <div
             className={clsx("App__menu-item", "text-link", {
-              "App__menu-item-selected": location.pathname === "/data",
+              "App__menu-item-selected":
+                location.pathname.indexOf("/data") === 0,
             })}
           >
             Data

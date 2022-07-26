@@ -37,7 +37,7 @@ export const Login: React.FC = () => {
         <Button
           size="small"
           variant="contained"
-          onClick={() => navigate("/login/crednetials")}
+          onClick={() => navigate("/login/credentials")}
         >
           Login with username/password
         </Button>

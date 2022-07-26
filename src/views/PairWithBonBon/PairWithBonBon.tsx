@@ -20,7 +20,7 @@ export const PairWithBonBon: React.FC = () => {
       and submit it.
       <div id="PairWithBonBon__form">
         <Input
-          size="small"
+          fullWidth
           name="token"
           className="PairWithBonBon__token-input"
           value={token}

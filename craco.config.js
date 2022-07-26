@@ -10,9 +10,9 @@ module.exports = {
               require.resolve("react-dev-utils/webpackHotDevClient"),
             paths.appIndexJs,
           ].filter(Boolean),
-          content: paths.appSrc + "/chrome/content.ts",
-          background: paths.appSrc + "/chrome/background.ts",
-          options: paths.appSrc + "/options/index.tsx",
+          content: paths.appSrc + "/chunks/chrome/content.ts",
+          background: paths.appSrc + "/chunks/chrome/background.ts",
+          options: paths.appSrc + "/chunks/options/index.tsx",
         },
         output: {
           ...webpackConfig.output,

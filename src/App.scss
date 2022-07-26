@@ -1,0 +1,32 @@
+#App {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+    padding: 20px;
+
+    .App__header {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    #App__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+
+        .App__menu-item {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .App__menu-item:hover {
+            text-decoration: underline;
+        }
+
+        .App__menu-item-selected {
+            font-weight: bold;
+        }
+    }
+}

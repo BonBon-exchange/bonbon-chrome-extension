@@ -1,4 +1,8 @@
-.Button__primary {
+.Button__primary.MuiButton-contained {
   color: var(--color-text-primary) !important;
   background-color: var(--color-background-secondary) !important;
+}
+
+.Button__primary.MuiButton-outlined {
+  border: 1px solid var(--color-icon-primary);
 }

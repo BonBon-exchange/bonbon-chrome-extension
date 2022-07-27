@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "App";
 import Login from "routes/Login";
 import Collections from "routes/Collections";
+import Data from "routes/Data";
 
 import { AddToCollection } from "views/AddToCollection";
 import { LoginWithCredentials } from "views/LoginWithCredentials";
@@ -27,6 +28,7 @@ root.render(
       <Route path="/" element={<App />}>
         <Route path="popup.html" element={<Home />} />
         <Route path="home" element={<Home />} />
+        <Route path="data" element={<Data />} />
         <Route path="collections" element={<Collections />}>
           <Route path="add" element={<AddToCollection />} />
         </Route>

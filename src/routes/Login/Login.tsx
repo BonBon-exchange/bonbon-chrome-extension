@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useNavigate, Outlet, useLocation } from "react-router-dom";
 
 import { Button } from "components/Button";
@@ -9,29 +9,6 @@ import "./style.scss";
 export const Login: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
-  console.log(location);
-  const [title, setTitle] = useState<string>("Login");
-
-  useEffect(() => {
-    switch (location.pathname) {
-      default:
-        setTitle("Login");
-        break;
-
-      case "/login/pair":
-        setTitle("Pair with BonBon Browser");
-        break;
-
-      case "/login/credentials":
-        setTitle("Login");
-        break;
-
-      case "/login/register":
-        setTitle("Register");
-        break;
-    }
-  }, [location.pathname]);
 
   const LoginMenu: React.FC = () => {
     return (
@@ -63,7 +40,7 @@ export const Login: React.FC = () => {
 
   return (
     <>
-      <Layout title={title}>
+      <Layout title="Login">
         <>
           {location.pathname !== "/login" ? (
             <>

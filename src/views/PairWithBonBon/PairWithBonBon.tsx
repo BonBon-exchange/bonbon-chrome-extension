@@ -14,6 +14,7 @@ export const PairWithBonBon: React.FC = () => {
 
   return (
     <>
+      <div className="View__title">Pair with BonBon Browser</div>
       <a href="bonbon://pair" className="text-link">
         Generate a token on BonBon Browser
       </a>{" "}
